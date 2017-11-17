@@ -23,6 +23,14 @@ Go to your `tensorflow/models/research` directory and run:
 python object_detection/train.py --logtostderr --pipeline_config_path=/PATH_TO_RACOON_DATASET/raccoon_dataset/training/ssd_mobilenet_v1_pets.config --train_dir=/PATH_TO_RACOON_DATASET/raccoon_dataset/training
 ```
 
+Also don't forget to get the checkpoint file first:
+
+```
+wget http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11_06_2017.tar.gz
+tar -xvzf ssd_mobilenet_v1_coco_11_06_2017.tar.gz
+cp ssd_mobilenet_v1_coco_11_06_2017/model.ckpt.data-00000-of-00001 /PATH_TO_RACOON_DATASET/raccoon_dataset/training/.
+```
+
 ## Copyright
 
 See [LICENSE](LICENSE) for details.
