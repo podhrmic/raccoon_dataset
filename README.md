@@ -16,6 +16,13 @@ for the TF API and xml_to_csv.py is used to convert the xml files into one csv
 split labels is used to split the full labels into train and test labels
 ```
 
+## Running
+Go to your `tensorflow/models/research` directory and run:
+
+```
+python object_detection/train.py --logtostderr --pipeline_config_path=/PATH_TO_RACOON_DATASET/raccoon_dataset/training/ssd_mobilenet_v1_pets.config --train_dir=/PATH_TO_RACOON_DATASET/raccoon_dataset/training
+```
+
 ## Copyright
 
 See [LICENSE](LICENSE) for details.
